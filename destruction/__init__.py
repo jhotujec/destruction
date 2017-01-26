@@ -11,3 +11,6 @@ builtins.float = FakeFloat
 
 from destruction.FakeMath import FakeMath
 sys.modules['math'] = FakeMath()
+
+from destruction.FakeList import FakeList
+builtins.list = FakeList
